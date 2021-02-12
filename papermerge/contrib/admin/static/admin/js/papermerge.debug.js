@@ -22989,7 +22989,7 @@ __p+='<label class="tag" style="background: '+
 ';color: '+
 ((__t=( fg_color ))==null?'':__t)+
 '; margin: 1rem 0; padding: 0.25rem 0.5rem; border-radius: 0.5rem;">\n    '+
-((__t=( name ))==null?'':__t)+
+((__t=( name.replaceAll('<' , '&lt;').replaceAll('>' , '&gt;') ))==null?'':__t)+
 '\n</label>';
 }
 return __p;
